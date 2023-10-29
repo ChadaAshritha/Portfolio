@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="container nav-container">
+                <a href="" class="logo"><h2>Chada<span> Ashritha</span>.</h2></a>
+                <ul>
+                    <li><a href="#About">About me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <button class="menubutton"><img src ="./assets/img/menu.png"></button>
+            </div>
+        </nav>
+
+        <header>
+            <div class="header-container container">
+                <div class="header-left">
+                    <h1>Hi,I'm<br>Chada Ashritha</h1>
+                    <p>Undergraduating engineer at Guru Nanak Institutions Technical Campus , Hyderabad.</p>
+                <h5>A Computer Science Engineering Student Specializing in IoT</h5>
+                <div class="header-action-aria">
+                    <a href="./assets/img/CV.pdf" download class="btn btn-primary">Download CV</a>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+                    
+                </div>
+                <div class="header-right">
+                <img src="./assets/img/hero.png" alt="">
+                </div>
+            </div>           
+        </header>
+
+        <section id="About">
+            <h1>About</h1>
+            <div class="container about-container">
+                <p>"I'm a Computer Science enthusiast with a passion for technology. I thrive in challenging environments and am actively seeking opportunities to contribute my problem-solving skills to innovative organizations. I'm excited about roles that encourage personal growth and meaningful contributions in the tech industry. My goal is to make a lasting impact in the field of computer science.</p>
+                <div class="about-content">
+                    <article class="about-article">
+                        <img src="./assets/img/vector.png" alt="">
+                        <h5>Full Name</h5>
+                        <small>Chada Ashritha</small>
+                    </article>
+                    <article class="about-article">
+                        <img src="./assets/img/vector.png" alt="">
+                        <h5>Email Address</h5>
+                        <small>ashrithachada2004@gmail.com</small>
+                    </article>
+                    <article class="about-article">
+                        <img src="./assets/img/vector.png" alt="">
+                        <h5>LinkedIn</h5>
+                        <small>Chada Ashritha</small>
+                    </article>
+                    <article class="about-article">
+                        <img src="./assets/img/vector.png" alt="">
+                        <h5>Phone</h5>
+                        <small>+91 9346357698</small>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="Skills">
+            <h1>My Skills</h1>
+            <div class="container skills-container">
+                <article class="skill-article">
+                    <h1>90%</h1>
+                    <h4>HTML</h4>
+                </article>
+                <article class="skill-article">
+                    <h1>80%</h1>
+                    <h4>CSS</h4>
+                </article>
+                <article class="skill-article">
+                    <h1>60%</h1>
+                    <h4>JAVASCRIPT</h4>
+                </article>
+                <article class="skill-article">
+                    <h1>20%</h1>
+                    <h4>PHP </h4>
+                </article>
+                <article class="skill-article">
+                    <h1>80%</h1>
+                    <h4>PYTHON </h4>
+                </article>
+                <article class="skill-article">
+                    <h1>80%</h1>
+                    <h4>C</h4>
+                </article>
+                <article class="skill-article">
+                    <h1>50%</h1>
+                    <h4>JAVA</h4>
+                </article>
+                <article class="skill-article">
+                    <h1>70%</h1>
+                    <h4>DATA STRUCTURES</h4>
+                </article>
+                <article class="skill-article">
+                    <h1>70%</h1>
+                    <h4>OOP</h4>
+                </article>
+                <article class="skill-article">
+                    <h1>75%</h1>
+                    <h4>OS</h4>
+                </article>
+                <article class="skill-article">
+                    <h1>80%</h1>
+                    <h4>IOT</h4>
+                </article>
+            </div>
+        </section>
+
+        <!--....................Start Contact Section......................-->
+        <section id="Contact">
+            <h1>Get in touch</h1>
+            <div class="contatact-container container">
+                <form>
+                    <div class="form-top">
+                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="number" placeholder="Phone number" required>
+                    </div>
+                    <div class="form-bottom">
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn-primary">Submit now</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <footer>
+            @ Your Chada Ashritha
+
+        </footer>
+
+        <script>
+            let nav = document.querySelector('nav');
+            let navLink = document.querySelector('nav ul');
+            let Menu = document.querySelector('.menubutton');
+
+            window.addEventListener('scroll',()=>{
+                nav.classList.toggle('naWinScroll',window.scrollY>0)
+            });
+
+            Menu.addEventListener('click',()=>{
+                navLink.classList.toggle('ulblock');
+            });
+
+            
+        </script>
+
+
+
+    </body>
+</html>
